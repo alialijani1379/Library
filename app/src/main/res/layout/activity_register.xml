@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:fontFamily="@font/iran_sans_mobile_fa"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_name_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/shape_edt"
+            android:hint="Name"
+            android:padding="@dimen/_5sdp" />
+
+        <EditText
+            android:id="@+id/edt_last_name_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/shape_edt"
+            android:hint="Last Name"
+            android:padding="@dimen/_5sdp" />
+
+        <EditText
+            android:id="@+id/edt_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/shape_edt"
+            android:hint="E-Mail"
+            android:padding="@dimen/_5sdp" />
+
+        <EditText
+            android:id="@+id/edt_password_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/shape_edt"
+            android:hint="Password"
+            android:padding="@dimen/_5sdp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/ll"
+        android:layout_alignBottom="@id/ll"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_baseline_visibility" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:background="@drawable/shape_btn"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
